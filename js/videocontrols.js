@@ -6,7 +6,7 @@ var video = document.getElementById('video');
 var videoControls = document.getElementById('video-controls');
 
 // Hide the default controls
-video.controls = false;
+video.controls = true;
 
 // Display the user defined video controls
 videoControls.style.display = 'block';
