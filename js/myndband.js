@@ -3,20 +3,20 @@ var years, months, weeks, days, hours;
 var minutes, seconds;
 var url_str = document.URL;
 let url = new URL(url_str);
-let search_params = url.searchParams; 
+let search_params = url.searchParams;
 let id = search_params.get('id')-1;
 
 fetch("../videos.json")
   .then((response) => response.json())
   .then((data) => {
-	  
+
 	  document.querySelector("header").innerHTML += `<div class="row col col-12 title">
       <h2>${data.videos[id].title}</h2>
       <div class="row"></div>
       </div>`;
-	  
+
 	  document.querySelector(".videoContainer").innerHTML += `
-	  
+
             <video
               class="video"
               controls
@@ -54,7 +54,7 @@ fetch("../videos.json")
                 >Download MP4</a
               >
             </video>
-          
+
 	  <div class="row col-6 col-12 controls">
       <div>
         <button class="back" type="button"></button>
@@ -64,15 +64,15 @@ fetch("../videos.json")
         <button class="next" type="button"></button>
       </div>
       </div>
-	  
-	  
-	  
+
+
+
 	  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio nisi, blandit quis turpis nec, ultrices placerat ante. Suspendisse viverra enim id tempus interdum.</p>
 	  <p class="description">Maecenas cursus nec leo ac auctor</p>
-	  
-	  
+
+
 	  `
-	  
+
 	  for (var i = 0; i < Object.keys(data.videos[id].related).length; i++) {
 		years = months = weeks = days = hours = minutes = 0;
         seconds = data.videos[data.videos[id].related[i]-1].duration;
@@ -93,7 +93,7 @@ fetch("../videos.json")
           seconds = seconds - 60 * minutes;
         }
 	  document.querySelector(".related2").innerHTML += `
-	  
+
 	  <a href="pages/video.html?id=${
           data.videos[id].related[i]
         }"><div class="myndband${
@@ -142,8 +142,8 @@ fetch("../videos.json")
             }
           })()}</div>
         </div></a>
-		
-		
+
+
 			`
 	  }
   });

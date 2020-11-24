@@ -37,9 +37,9 @@ fetch("./videos.json")
             data.categories[i].title.indexOf(" ")
           )} .row`
         ).innerHTML += `
-        <a href="pages/myndband${
+        <a href="pages/video.html?id=${
           data.videos[data.categories[i].videos[u] - 1].id
-        }.html"><div class="myndband${
+        }"><div class="myndband${
           data.videos[data.categories[i].videos[u] - 1].id
         } col col-4 col-sm-12 myndband">
           <div class="myndband-poster">
