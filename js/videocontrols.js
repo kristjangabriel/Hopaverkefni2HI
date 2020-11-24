@@ -5,6 +5,7 @@ if (supportsVideo) {
 var videoContainer = document.getElementById('videoContainer');
 var video = document.getElementById('video');
 var videoControls = document.getElementById('video-controls');
+
 // Hide the default controls
 video.controls = false;
 

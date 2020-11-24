@@ -15,7 +15,7 @@ main {
 }
 
 .video {
-border: 7px solid rgb(182, 57, 57);
+border: 7px solid rgb(163, 163, 163);
 }
 
 p {
@@ -30,7 +30,7 @@ flex-wrap: wrap;
 }
 
 .controls {
-visibility: visible;
+visibility: hidden;
 opacity: 0.5;
 width: 400px;
 border-radius: 90px;
@@ -63,7 +63,7 @@ font-size: 22px;
 
 
 button {
-background-color: aqua;
+background-color: rgb(241, 241, 241);
 position: relative;
 border: 0;
 flex: 1;
@@ -71,7 +71,7 @@ outline: none;
 height: 20px;
 
   .play{
-    background-color: aqua;
+    background-color: rgb(231, 231, 231);
     border: 4;
   }
 }
