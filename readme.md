@@ -145,7 +145,7 @@ Hópverkefni 2 í TÖL107 haust 2020
 ## Höfundar
 * Ingibjörg Salvör Pálsdóttir isp2@hi.is
 * Kristján Gabríel Þórhallsson kgt2@hi.is
-* Óskar Helgi Berenguer ohb5@hi.is
+* Óskar Helgi Berenguer ohb5@hi.is test
 * Tinna Hallsdóttir tih20@hi.is
 
 ## Um verkefni
