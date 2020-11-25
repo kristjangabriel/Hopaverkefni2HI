@@ -152,7 +152,7 @@ Hópverkefni 2 í TÖL107 haust 2020
 ..
 
 ## Uppsetning
-Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól verða sett upp með skipuninni:
+Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól verða sett upp með skipuninni:<br />
     npm install
 * babel 6.23.0
 * browser-sync 2.26.12
