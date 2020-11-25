@@ -19,49 +19,20 @@ fetch("../videos.json")
 
             <video
               class="video"
-              controls
+
               preload="metadata"
               poster=".${data.videos[id].poster}"
             >
               <source src=".${data.videos[id].video}" type="video/mp4" />
-              <!-- Flash fallback -->
-              <object
-                type="application/x-shockwave-flash"
-                data="flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4"
-                width="1024"
-                height="576"
-              >
-                <param
-                  name="movie"
-                  value="flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4"
-                />
-                <param name="allowfullscreen" value="true" />
-                <param name="wmode" value="transparent" />
-                <param
-                  name="flashvars"
-                  value="controlbar=over&amp;image=img/poster.jpg&amp;file=flash-player.swf?videoUrl=video/tears-of-steel-battle-clip-medium.mp4"
-                />
-                <img
-                  alt="Big bunny Video"
-                  src="/videos/bunny.png"
-                  width="1024"
-                  height="428"
-                  title="No video playback possible, please download the video from the link below"
-                />
-              </object>
-              <!-- Offer download -->
-              <a href="video/tears-of-steel-battle-clip-medium.mp4"
-                >Download MP4</a
-              >
             </video>
 
 	  <div class="row col-6 col-12 controls">
       <div>
-        <button class="back" type="button"></button>
-        <button class="playpause" type="button"></button>
-        <button class="mute" type="button"></button>
-        <button class="fs" type="button"></button>
-        <button class="next" type="button"></button>
+        <button class="back" type="button"> </button>
+        <button class="playpause" id="playpause" type="button"> </button>
+        <button class="mute" type="button"> </button>
+        <button class="fs" type="button"> </button>
+        <button class="next" type="button"> </button>
       </div>
       </div>
 

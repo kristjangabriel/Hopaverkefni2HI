@@ -10,9 +10,12 @@
 .video {
 border: 3px gray;
 border-style: solid none;
-width:1290px;
+width:100%;
+max-width: 1260px;
+
 }
 .controls{
+
 	justify-content:center;
 	margin-left:15px;
 	div{
@@ -22,7 +25,7 @@ width:1290px;
 			background-image:url("../img/back.svg");
 		}
 		.playpause{
-			background-image:url("../img/play.svg");	
+			background-image:url("../img/play.svg");
 		}
 		.mute{
 			background-image:url("../img/mute.svg");
