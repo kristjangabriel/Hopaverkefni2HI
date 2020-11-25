@@ -149,7 +149,11 @@ Hópverkefni 2 í TÖL107 haust 2020
 * Tinna Hallsdóttir tih20@hi.is
 
 ## Um verkefni
-..
+Verkefnið er sett upp skv. leiðbeiningum frá https://github.com/vefforritun/vef1-2020-h2.
+
+* CSS er að finna í /styles möppu. Því er skipt í nokkra hluta; grid.scss fyrir allt sem tengist grid, config.scss fyrir almenn eigindi og síðan main.scss, footer.scss, video.scss/myndbond.scss fyrir sértæk eigindi.
+* CSS skrárnar eru síðan keyrðar í gegnum sass og sameinast í einni skrá: styles.scss
+* JS er að finna í /js möppu. Því er skipt í þrjá hluta sem einhver ætlar að útskýra betur!
 
 ## Uppsetning
 Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól verða sett upp með skipuninni:<br />
