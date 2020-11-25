@@ -17,18 +17,17 @@ fetch("../videos.json")
 
 	  document.querySelector(".videoContainer").innerHTML += `
 
-            <video
-              class="video"
-
+            <video id="video" controls
               preload="metadata"
               poster=".${data.videos[id].poster}"
             >
               <source src=".${data.videos[id].video}" type="video/mp4" />
             </video>
 
+
 	  <div class="row col-6 col-12 controls">
       <div>
-        <button class="back" type="button"> </button>
+        <button class="back" id="backbutton" type="button"></button>
         <button class="playpause" id="playpause" type="button"> </button>
         <button class="mute" type="button"> </button>
         <button class="fs" type="button"> </button>
@@ -40,9 +39,11 @@ fetch("../videos.json")
 
 	  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio nisi, blandit quis turpis nec, ultrices placerat ante. Suspendisse viverra enim id tempus interdum.</p>
 	  <p class="description">Maecenas cursus nec leo ac auctor</p>
+    </body>
+
+    `;
 
 
-	  `
 
 	  for (var i = 0; i < Object.keys(data.videos[id].related).length; i++) {
 		years = months = weeks = days = hours = minutes = 0;
@@ -115,6 +116,13 @@ fetch("../videos.json")
         </div></a>
 
 
-			`
+      `;
+
+
+
+
+
+
 	  }
   });
+

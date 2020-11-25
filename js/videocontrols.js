@@ -1,27 +1,34 @@
-var video = document.querySelector('video');
-var playpause = document.getElementById('play-pause');
-var backbutton = document.getElementById('backbutton');
+function pageLoaded() {
+  alert('page has loaded')
+}
 
 
 
-var backbutton = document.getElementById('backbutton');
+var video = document.querySelector('.video');
+var btn = document.getElementById('playpause');
+var back = document.getElementById('backbutton');
 
+
+back.onclick = function() {
+  alert("play!!");
+};
 
 
 // Set up Player Controls
 
 function togglePlayPause() {
-  if (video.paused || video.ended) {
-  playpause.className = "pause";
+  if (video.paused) {
+  btn.playpause = 'pause';
   video.play();
   }
   else {
-    playpause.className = "play";
-
-  video.pause();
+    btn.playpause = 'play'
+    video.pause();
   }
 }
 
-playpause.onclick = function() {
+btn.onclick = function() {
   alert("play!!");
 };
+
+

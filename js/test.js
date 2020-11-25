@@ -90,3 +90,5 @@ fetch("./videos.json")
     }
   });
 
+
+  var video = document.querySelector('.video');
