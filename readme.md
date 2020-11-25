@@ -152,8 +152,24 @@ Hópverkefni 2 í TÖL107 haust 2020
 ..
 
 ## Uppsetning
-Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól þurfa að vera sett upp með npm:
-* asdf
+Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól verða sett upp með skipuninni:
+    npm install
+* babel 6.23.0
+* browser-sync 2.26.12
+* concurrently: 5.3.0
+* eslint 7.13.0
+* node-sass 4.14.1
+* rollup 2.33.1
+* stylelint 13.7.2
+* stylelint-config-sass-guidelines 7.1.0
+* stylelint-config-standard 20.0.0
 
 ## Notkun
-.
+    npm install
+Setur upp öll nauðsynleg tól.
+
+    npm run dev
+Keyrir server og opnar vafraglugga.
+
+    npm test
+Keyrir eslint og stylelint.
