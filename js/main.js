@@ -10,6 +10,9 @@ fetch("./videos.json")
       ).innerHTML += `<div class="${data.categories[i].title}">
       <h2>${data.categories[i].title}</h2>
       <div class="row"></div>
+      <div class="col offset-col-1 col-10">
+        <div class="rect"></div>
+      </div>
       </div>`;
       for (var u = 0; u < Object.keys(data.categories[i].videos).length; u++) {
         years = months = weeks = days = hours = minutes = 0;

@@ -8,4 +8,14 @@ main {
   a {
     text-decoration: none;
   }
+  .rect {
+    height: 1px;
+    background-color: black;
+  }
+}
+
+footer, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
