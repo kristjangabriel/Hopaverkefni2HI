@@ -12,18 +12,20 @@
     "lint": "stylelint styles.scss ./**/*.scss",
     "esLint": "npx eslint ./**/*.js",
     "test": "concurrently npm:lint npm:esLint",
-    "rollup": "rollup js/test.js --format iife --name 'myBundle' --file bundle.js"
+    "rollup": "rollup js/test.js --format iife --name 'myBundle' --file bundle.js",
+    "install": "npm install --save-dev babel browser-sync concurrently eslint node-sass rollup stylelint stylelint-config-sass-guidelines stylelint-config-standard",
+    "run dev": "browser-sync"
   },
   "author": "Kristjan Gabriel",
   "license": "ISC",
   "devDependencies": {
     "babel": "^6.23.0",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "concurrently": "^5.3.0",
-    "eslint": "^7.13.0",
+    "eslint": "^7.14.0",
     "node-sass": "^4.14.1",
-    "rollup": "^2.33.1",
-    "stylelint": "^13.7.2",
+    "rollup": "^2.33.3",
+    "stylelint": "^13.8.0",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0"
   },
