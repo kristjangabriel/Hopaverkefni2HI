@@ -9,10 +9,6 @@ var btn = document.getElementById('playpause');
 var back = document.getElementById('backbutton');
 
 
-back.onclick = function() {
-  alert("play!!");
-};
-
 
 // Set up Player Controls
 

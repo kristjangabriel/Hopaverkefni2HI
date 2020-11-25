@@ -27,8 +27,8 @@ fetch("../videos.json")
 
 	  <div class="row col-6 col-12 controls">
       <div>
-        <button class="back" id="backbutton" type="button"></button>
-        <button class="playpause" id="playpause" type="button"> </button>
+        <button class="back" type="button"></button>
+        <button class="playpause" type="button"> </button>
         <button class="mute" type="button"> </button>
         <button class="fs" type="button"> </button>
         <button class="next" type="button"> </button>
@@ -113,16 +113,54 @@ fetch("../videos.json")
               }
             }
           })()}</div>
-        </div></a>
+        </div></a>`;
+    }
+    // Set up videoplayer variables
+    var video = document.getElementById('video');
+    var playBtn = document.getElementsByClassName('playpause')[0];
+    var backBtn = document.getElementsByClassName('back')[0];
+    var muteBtn = document.getElementsByClassName('mute')[0];
+    var fullscreeenBtn = document.getElementsByClassName('fs')[0];
+    var frwdBtn = document.getElementsByClassName('next')[0];
 
+    // Set up Player Control functions
+    playBtn.onclick = function() {
+      if (video.paused) {
+        video.play();
+        }
+        else {
+          video.pause();
+        }
+    };
 
-      `;
+    backBtn.onclick = function() {
+      var curTime = video.currentTime;
+      if (curTime > 3.0) {
+        video.currentTime = curTime - 3;
+      } else {
+        video.currentTime = 0;
+      }
+    };
+    
+    muteBtn.onclick = function() {
+      if(video.muted) {
+        video.muted = false;
+      } else {
+        video.muted = true;
+      }
+    };
 
+    fullscreeenBtn.onclick = function() {
+      video.requestFullscreen();
+    };
 
+    frwdBtn.onclick = function() {
+      var curTime = video.currentTime;
+      if (curTime < video.duration + 3.0) {
+        video.currentTime = curTime + 3;
+      } else {
+        video.currentTime = video.duration;
+      }
+    };
 
-
-
-
-	  }
   });
-
