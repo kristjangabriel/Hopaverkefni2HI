@@ -1,69 +1,112 @@
-main {
-  .myndband-poster {
-	margin-left:20px;
-	margin-right:20px;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-  a {
-    text-decoration: none;
-  }
-  .rect {
-    height: 1px;
-    background-color: black;
-  }
-
-}
-
+main{
+	padding-left:15px;
+	padding-right:15px;
+	}
+	
 footer, header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	padding-bottom:30px;
+	padding-top:20px;
+}	
+
+.Header-text{
+	h1 {
+		font-family: arial;
+		font-size: 54px;
+		font-weight: bold;
+		-webkit-hyphens: manual;
+		-ms-hyphens: manual;
+		hyphens: manual;
+		@media (max-width: 800px){
+			font-size: 32px;
+		}
+	}
+	.small{
+		display:none;
+		@media (max-width: 400px){
+			display:block;
+		}
+	}
+	.big{
+		display:none;
+		@media (min-width: 400px){
+			display:block;
+		}
+	}
 }
 
-h1 {
-  margin-bottom: 1em;
-  font-family: arial;
-  font-size: 4em;
-  font-weight: 800;
+.Nýleg,.Kennslumyndbönd,.Skemmtimyndbönd{
+	h2{
+		padding-bottom:20px;
+		font-family: arial;
+		font-size: 24px;
+		font-weight: 700;
+	}
 }
 
-h2 {
-  margin-bottom: 0.5em;
-  font-family: arial;
-  font-size: 2em;
-  font-weight: 700;
+.myndband-poster {
+	padding-bottom:20px;
+	.image{
+		@media (min-width:500px){
+		padding-right:20px;
+		}
+		position: relative;
+		text-align: center;
+		color: white;
+		.myndband-poster-time {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 0.3em;
+			position:absolute;
+			bottom: 15px;
+			right: 25px;
+			p{
+				color: white;
+				font-family: arial;
+			}
+		}
+	}
+    img {
+		width: 100%;
+		object-fit: cover;
+    }
+	.myndband-title{
+		p {
+			color: black;
+			font-family: arial;
+			font-size: 1.1em;
+			font-weight: 700;
+		}
+	}
+	.myndband-time {
+		color: black;
+		font-family: arial;
+		font-size: 1em;
+	}
 }
-.image {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.myndband-poster-time {
-	background: rgba(0, 0, 0, 0.7);
-  padding: 0.3em;
-  position:absolute;
-  bottom: 15px;
-  right: 5px;
   
+a {
+	text-decoration: none;
 }
 
-.myndband-poster-time p {
-  color: white;
-  font-family: arial;
+.rect {
+	height: 1px;
+	background-color: black;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
-.myndband-title p {
-  color: black;
-  font-family: arial;
-  font-size: 1.1em;
-  font-weight: 700;
-}
 
-.myndband-time {
-  color: black;
-  font-family: arial;
-  font-size: 1em;
-}
+
+
+
+
+
+
+
+
+
+
+
