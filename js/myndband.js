@@ -72,12 +72,13 @@ fetch("../videos.json")
 		data.videos[data.videos[id].related[i]-1].id
         } col col-4 col-sm-12 myndband">
           <div class="myndband-poster">
+		  <div class="image">
             <img src=".${data.videos[data.videos[id].related[i]-1].poster}">
             <div class="myndband-poster-time"><p>${
               minutes + ":" + ("0" + seconds).slice(-2)
-            }</p></div
+            }</p></div>
             </div>
-          <div class="myndband-title"><p>.${
+          <div class="myndband-title"><p>${
             data.videos[data.videos[id].related[i]-1].title
           }</p></div>
           <div class="myndband-time">${(() => {
@@ -113,8 +114,12 @@ fetch("../videos.json")
               }
             }
           })()}</div>
-        </div></a>`;
+        </div></a>
+      `;
     }
+
+	  
+	  
     // Set up videoplayer variables
     var video = document.getElementById('video');
     var playBtn = document.getElementsByClassName('playpause')[0];

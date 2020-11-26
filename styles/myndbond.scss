@@ -7,13 +7,16 @@
 	font-weight: 800;
 	font-style: normal;
 	text-align:center;
+	@media (max-width:800px){
+		font-size:24px;
+	}
 }
-.video {
+#video {
 border: 3px gray;
 border-style: solid none;
 width:100%;
-margin-left:20px;
 max-width: 1260px;
+
 }
 .controls{
 	justify-content:center;
@@ -54,7 +57,6 @@ max-width: 1260px;
 .description{
 	font-family:Arial;
 	padding-bottom:5px;
-	padding-left:20px;
 }
 .related{
 	h2{

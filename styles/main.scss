@@ -10,6 +10,10 @@ footer, header {
 	text-align:center;
 	padding-bottom:30px;
 	padding-top:20px;
+	a{
+		color:black;
+		font-family:Arial;
+	}
 }	
 
 .Header-text{
@@ -50,9 +54,8 @@ footer, header {
 .myndband-poster {
 	padding-bottom:20px;
 	.image{
-		@media (min-width:500px){
 		padding-right:20px;
-		}
+		
 		position: relative;
 		text-align: center;
 		color: white;
@@ -78,6 +81,7 @@ footer, header {
 			font-family: arial;
 			font-size: 1.1em;
 			font-weight: 700;
+			padding-right:10px;
 		}
 	}
 	.myndband-time {
