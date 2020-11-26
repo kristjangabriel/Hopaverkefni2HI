@@ -1,17 +1,16 @@
 .grid {
-	margin: 0 auto;
-	max-width: 1290px;
-	overflow: hidden;
+  margin: 0 auto;
+  max-width: 1290px;
+  overflow: hidden;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .col {
@@ -203,7 +202,7 @@ small—upp að 500px
 
   .offset-col-sm-2 {
     margin-left: 16.66666667%;
-	margin-right: 16.66666667%;
+    margin-right: 16.66666667%;
   }
 
   .offset-col-sm-3 {
