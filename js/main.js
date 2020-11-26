@@ -46,10 +46,11 @@ fetch("./videos.json")
           data.videos[data.categories[i].videos[u] - 1].id
         } col col-4 col-sm-12 myndband">
           <div class="myndband-poster">
+			<div class="image">
             <img src="${data.videos[data.categories[i].videos[u] - 1].poster}">
             <div class="myndband-poster-time"><p>${
               minutes + ":" + ("0" + seconds).slice(-2)
-            }</p></div
+            }</p></div>
             </div>
           <div class="myndband-title"><p>${
             data.videos[data.categories[i].videos[u] - 1].title
