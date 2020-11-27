@@ -3,7 +3,6 @@ function pageLoaded() {
 }
 
 
-
 var video = document.querySelector('.video');
 var btn = document.getElementById('playpause');
 var back = document.getElementById('backbutton');

@@ -10,12 +10,12 @@ fetch("../videos.json")
   .then((response) => response.json())
   .then((data) => {
 
-	  document.querySelector("header").innerHTML += `<div class="row col col-12 title">
+    document.querySelector("header").innerHTML += `<div class="row col col-12 title">
       <h2>${data.videos[id].title}</h2>
       <div class="row"></div>
       </div>`;
 
-	  document.querySelector(".videoContainer").innerHTML += `
+    document.querySelector(".videoContainer").innerHTML += `
 
             <video id="video" controls
               preload="metadata"
@@ -45,7 +45,7 @@ fetch("../videos.json")
 
 
 
-	  for (var i = 0; i < Object.keys(data.videos[id].related).length; i++) {
+    for (var i = 0; i < Object.keys(data.videos[id].related).length; i++) {
 		years = months = weeks = days = hours = minutes = 0;
         seconds = data.videos[data.videos[id].related[i]-1].duration;
         var timeCreated = time - data.videos[data.videos[id].related[i]-1].created;
@@ -64,7 +64,7 @@ fetch("../videos.json")
           minutes = Math.floor(seconds / 60);
           seconds = seconds - 60 * minutes;
         }
-	  document.querySelector(".related2").innerHTML += `
+    document.querySelector(".related2").innerHTML += `
 
 	  <a href="pages/video.html?id=${
           data.videos[id].related[i]
@@ -118,8 +118,8 @@ fetch("../videos.json")
       `;
     }
 
-	  
-	  
+
+
     // Set up videoplayer variables
     var video = document.getElementById('video');
     var playBtn = document.getElementsByClassName('playpause')[0];
