@@ -15,7 +15,9 @@ main a {
   text-decoration: none;
 }
 
-.player:hover .controls .player:focus .controls {
+.player:hover,
+.player:focus,
+.controls {
   opacity: 1;
 }
 
