@@ -64,6 +64,16 @@ header {
   }
 }
 
+.myndband-title {
+  p {
+    color: #000;
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-right: 10px;
+  }
+}
+
 .myndband-poster {
   padding-bottom: 20px;
 
@@ -72,19 +82,6 @@ header {
     padding-right: 20px;
     position: relative;
     text-align: center;
-
-    .myndband-poster-time {
-      background: rgba(0, 0, 0, 0.7);
-      bottom: 15px;
-      padding: 0.3em;
-      position: absolute;
-      right: 25px;
-
-      p {
-        color: #fff;
-        font-family: arial, sans-serif;
-      }
-    }
   }
 
   img {
@@ -92,20 +89,23 @@ header {
     width: 100%;
   }
 
-  .myndband-title {
-    p {
-      color: #000;
-      font-family: arial, sans-serif;
-      font-size: 1.1em;
-      font-weight: 700;
-      padding-right: 10px;
-    }
-  }
-
   .myndband-time {
     color: #000;
     font-family: arial, sans-serif;
     font-size: 1em;
+  }
+}
+
+.myndband-poster-time {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 15px;
+  padding: 0.3em;
+  position: absolute;
+  right: 25px;
+
+  p {
+    color: #fff;
+    font-family: arial, sans-serif;
   }
 }
 
